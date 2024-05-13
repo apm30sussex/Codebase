@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coca Cola 3D Model</title>
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to X3DOM CSS and JavaScript-->
+    <link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css">
+    <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="menu">
+        <h1 class="logo">Coca Cola</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="cocacola.html">Coke</a></li>
+                        <li><a href="sprite.html">Sprite</a></li>
+                        <li><a href="fanta.html">Fanta</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.coca-cola.com/gb/en">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 3D Models -->
+    <div class="container">
+        <div class="model-container">
+            <h2>Coca Cola Can 3D Model</h2>
+            <x3d id="colacan-model">
+                <scene> 
+                    <inline id='' url="3d models\cokecan.x3d"></inline>
+                </scene>
+            </x3d>
+        </div>
+        <div class="buttons-container">
+            <p class="description">The X3D model has been created in Blender, exported to X3D to display</p>
+            <p class="description hidden">Unfortunately, the 3D model is currently not visible. It should display a realistic representation of a Coca Cola can.</p>
+            <a href="#" class="btn btn-primary btn-responsive camera-font" onclick="switchToView('colacan-model', 'front')">Front</a>
+            <a href="#" class="btn btn-primary btn-responsive camera-font" onclick="switchToView('colacan-model', 'top')">Top</a>
+            <a href="#" class="btn btn-primary btn-responsive camera-font" onclick="switchToWireframe()">Wireframe</a>
+        </div>
+    </div>
+
+   <!-- Picture and Info -->
+<div class="cocacola-info-container">
+    <div class="container">
+        <section class="cocacola-info">
+            <div class="info-content">
+                <img src="images\cokeinfo.png" alt="Coca Cola Logo">
+                <p>Coca-Cola is a carbonated soft drink produced by The Coca-Cola Company. Originally intended as a patent medicine, it was invented in the late 19th century by John Stith Pemberton and was bought out by businessman Asa Griggs Candler, whose marketing tactics led Coca-Cola to its dominance of the world soft-drink market throughout the 20th century.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+         <p>© Mobile Web 3D Applications</p>
+        <div class="socials">
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-google-plus-circle"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-facebook-square"></i></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

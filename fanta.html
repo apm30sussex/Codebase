@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coca Cola 3D Model</title>
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link to X3DOM CSS and JavaScript-->
+    <link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css">
+    <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <div class="menu">
+        <h1 class="logo">Coca Cola</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Products</a>
+                    <ul class="dropdown">
+                        <li><a href="cocacola.html">Coke</a></li>
+                        <li><a href="sprite.html">Sprite</a></li>
+                        <li><a href="fanta.html">Fanta</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.coca-cola.com/gb/en">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 3D Models -->
+    <div class="container">
+        <div class="model-container">
+            <h2>Fanta Can 3D Model</h2>
+            <x3d id="fanta-model">
+                <scene> 
+                    <inline id='' url="3d models\fantacan.x3d"></inline>
+                </scene>
+            </x3d>
+        </div>
+        <div class="buttons-container">
+            <p class="description">The X3D model has been created in Blender, exported to X3D to display</p>
+            <a href="#" class="btn btn-primary btn-responsive camera-font" onclick="switchToView('fanta-model', 'front')">Front</a>
+            <a href="#" class="btn btn-primary btn-responsive camera-font" onclick="switchToView('fanta-model', 'top')">Top</a>
+            <a href="#" class="btn btn-primary btn-responsive camera-font" onclick="switchToWireframe()">Wireframe</a>
+        </div>
+    </div>
+
+     <!-- Fanta Picture and Info -->
+<div class="fanta-info-container">
+    <div class="container">
+        <section class="fanta-info">
+            <img src="images\fantainfo.png" alt="Fanta Logo">
+            <p>Fanta is a brand of fruit-flavored carbonated soft drinks created by The Coca-Cola Company. Fanta originated as a Coca-Cola substitute during the American trade embargo of Nazi Germany, which affected the availability of Coca-Cola ingredients, in 1941. Fanta was originally created as a result of a shortage of Coca-Cola syrup in Nazi Germany.</p>
+        </section>
+    </div>
+</div>
+
+    <!--Footer-->
+    <footer class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright">© Mobile Web 3D Applications</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="socials">
+                        <a href="#"><i class="bx bxl-github"></i></a>
+                        <a href="#"><i class="bx bxl-google-plus-circle"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                        <a href="#"><i class="bx bxl-facebook-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Link to JS-->
+    <script src="main.js"></script>
+</body>
+</html>
